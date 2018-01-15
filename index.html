@@ -7,8 +7,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+    body{
+      font: 400 15px Lato, sans-serif;
+      line-height: 1;
+      color: #202020;
+    }
     .navbar {
       margin-bottom: 0;
+      line-height: 1.42857143 !important;
     }
     .bg-1 {
       background-color: #1abc9c; /* Green */
@@ -18,24 +24,28 @@
       background-color: #f6f6f6;
     }
     .jumbotron {
-      padding: 100px 25px;
+      padding-top: 110px;
+      padding-bottom: 70px;
+      padding-left: 25px;
+      padding-right: 25px;
     }
     .container-fluid-extra {
-      padding: 50px 50px;
+      padding: 20px 20px;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
       .col-sm-4 {
         text-align: center;
         margin: 25px 0;
       }
     }
-    .logo-small {
-    color: #1abc9c;
-    font-size: 50px;
+    .anchor{
+      display: block;
+      height: 51px; /*same height as header*/
+      margin-top: -51px; /*same height as header*/
+      visibility: hidden;
     }
-    .logo {
-    color: #1abc9c  ;
-    font-size: 200px;
+    .project{
+      color: #812000;
     }
   </style>
 </head>
@@ -43,10 +53,11 @@
 <body>
 
 <!-- Site navigation menu -->
-<nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+      data-target=".navbar-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -55,54 +66,71 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar">
-      <li class="active"><a href="#ProjectDescription">Description</a></li>
-      <li><a href="musings.html">Projects</a></li>
-      <li><a href="town.html">My team</a></li>
-      <li><a href="links.html">Links</a></li>
+      <li class="active"><a data-toggle="collapse" data-target=".in"
+        href="#Description">Description</a></li>
+      <li><a data-toggle="collapse" data-target=".in"
+        href="#Projects">Projects</a></li>
+      <li><a data-toggle="collapse" data-target=".in"
+        href="#Team">The team</a></li>
+      <li><a data-toggle="collapse" data-target=".in"
+        href="#Links">Links</a></li>
+      <li><a data-toggle="collapse" data-target=".in"
+        href="blog.html">Blog</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="mailto:carlossanchezfernandez01@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+      <li><a href="mailto:carlossanchezfernandez01@gmail.com">
+        <span class="glyphicon glyphicon-envelope"></span> </a>
+      </li>
     </ul>
   </div>
 </nav>
 
 <!-- Main content -->
 <div class="jumbotron bg-1 text-center">
-      <h1>Welcome to my Bootstrap</h1>
-      <p>This is my GitHub website!</p>
+      <h1>Welcome to my Website</h1>
+      <p style="font-size = 20px">
+        Here I will show my work in bioelectrochemical systems as well as
+        some interesting news in the field and its potential for biotechnology
+      </p>
+      <p></p>
 </div>
-<div id="ProjectDescription" class="container-fluid-extra">
-<p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere </p>
-<p>There should be more here, but I don't know what yet.</p>
+<span class="anchor" id="Description"></span>
+<div class="container-fluid-extra">
+  <h2>Research in bioelectrochemical communities</h2>
+  <p>
+    Microbial anlyses of electrically active microorganisms is still reduced.
+    The present work aims to build a comprehensive understanding of the electrically
+    active communities and serve as a base for future research in the electrical
+    capabilities of certain microorganisms.
+  </p>
 </div>
 <!-- Sign and date the page, it's only polite! -->
-<div class="container-fluid-extra">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>About Company Page</h2>
-      <h4>Lorem ipsum..</h4>
-      <p>Lorem ipsum..</p>
-      <button class="btn btn-default btn-lg">Get in Touch</button>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
-    </div>
-  </div>
-</div>
-
+<span class="anchor" id="Projects"></span>
 <div class="container-fluid-extra bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo"></span>
-    </div>
-    <div class="col-sm-8">
-      <h2>Our Values</h2>
-        <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>
-        <p><strong>VISION:</strong> Our vision Lorem ipsum..
-    </div>
-  </div>
+  <h2>Parallel Projects</h2>
+    <h4 class = "project">Open-Source Potentiostat</h4>
+    <p>Lorem ipsum..</p>
+    <h4 class = "project">Community analysis software</h4>
+    <p>Lorem ipsum..</p>
+    <h4 class = "project">Electrical Current Statistical Comparison</h4>
+    <p>Lorem ipsum..</p>
 </div>
 
+<div class="container-fluid-extra" id="Team">
+  <h2>Aims of the project</h2>
+    <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>
+    <h4><strong>VISION:</strong> Our vision Lorem ipsum..</h4>
+</div>
+
+<div class="container-fluid-extra bg-grey" id="Links">
+  <h2>Here are some interesting links:</h2>
+  <ul>
+    <li>Conference</li>
+    <li>Materials</li>
+    <li>Championship</li>
+    <li>my friends!</li>
+  </ul>
+</div>
 
 <div>
 <address>Made 15 January 2018 by myself.</address>
