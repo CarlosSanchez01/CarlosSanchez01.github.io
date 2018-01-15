@@ -11,6 +11,21 @@
       background-color: #1abc9c; /* Green */
       color: #ffffff;
     }
+    .bg-grey {
+      background-color: #f6f6f6;
+    }
+    .jumbotron {
+      padding: 100px 25px;
+    }
+    .container-fluid {
+      padding: 60px 50px;
+    }
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+    }
   </style>
 </head>
 
@@ -50,6 +65,34 @@
 <p>There should be more here, but I don't know what yet.</p>
 </div>
 <!-- Sign and date the page, it's only polite! -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2>
+      <h4>Lorem ipsum..</h4>
+      <p>Lorem ipsum..</p>
+      <button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2>
+        <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>
+        <p><strong>VISION:</strong> Our vision Lorem ipsum..
+    </div>
+  </div>
+</div>
+
+
 <div>
 <address>Made 15 January 2018 by myself.</address>
 </div>
