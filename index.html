@@ -51,9 +51,14 @@
       padding-top: 200px;
       padding-bottom:50px;
     }
-    .carousel-inner > .item > img {
-      width: auto;
-      height: 250px;
+    .img-responsive,
+    .thumbnail > img,
+    .thumbnail a > img,
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
   </style>
 </head>
@@ -135,7 +140,6 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-
       <div class="item active">
         <img src="/images/opensource.jpg" alt="Open Source" style="width:100%;">
         <div class="carousel-caption">
@@ -146,7 +150,6 @@
           </p>
         </div>
       </div>
-
       <div class="item">
         <img src="/images/potentiostat.jpg" alt="Potentiostat" style="width:100%;">
         <div class="carousel-caption">
@@ -157,7 +160,6 @@
           </p>
         </div>
       </div>
-
       <div class="item">
         <img src="/images/biorefinery.jpg" alt="Biorefinery" style="width:100%;">
         <div class="carousel-caption">
@@ -170,7 +172,6 @@
           </p>
         </div>
       </div>
-
     </div>
 
     <!-- Left and right controls -->
