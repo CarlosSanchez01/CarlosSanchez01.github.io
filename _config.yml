@@ -56,9 +56,9 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo: carlossanchez01/carlossanchez01.github.io
-    repo_id:
+    # repo_id:
     category: Comments
-    category_id: DIC_kwDODy-1C84CSN7z
+    # category_id: DIC_kwDODy-1C84CSN7z
     mapping: pathname # optional, default to 'pathname'
     input_position: bottom # optional, default to 'bottom'
     lang: en # optional, default to the value of `site.lang`
