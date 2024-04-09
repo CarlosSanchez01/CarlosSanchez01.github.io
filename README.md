@@ -58,3 +58,7 @@ From here, you’re ready to continue developing the site on your own. All of th
 ## Chirpy
 
 I will build my website based on the [jekyll theme chirpy](https://github.com/cotes2020/jekyll-theme-chirpy).
+
+## Giscus
+
+Trying to set up comment for my posts like in this [link](https://thiagoalves.ai/adding-comments-to-jekyll-using-giscus/).
