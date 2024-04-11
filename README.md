@@ -62,3 +62,18 @@ I will build my website based on the [jekyll theme chirpy](https://github.com/co
 ## Giscus
 
 Trying to set up comment for my posts like in this [link](https://thiagoalves.ai/adding-comments-to-jekyll-using-giscus/).
+
+## Github actions
+
+Added `.github/workflows/jekyll.yml` to have more control over the build and
+deploy process.
+
+## Customizing chirpy
+
+### Added favicon
+
+Following [chirpy](https://chirpy.cotes.page/posts/customize-the-favicon/)
+example, I created my own favicon.
+
+I added tabs and some contact in the page.
+Also some sharing options for the blogs.
