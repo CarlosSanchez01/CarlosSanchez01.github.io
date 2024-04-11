@@ -2,9 +2,9 @@
 # - type: links
 #   icon: "fa-solid fa-link"
 #   url: "https://l.technotim.live/links"
-# - type: twitter
-#   icon: "fa-brands fa-x-twitter"
-#   url: "https://l.technotim.live/twitter"
+- type: twitter
+  icon: "fa-brands fa-x-twitter"
+  url: "https://twitter.com/carlossanch01"
 # -
 #   type: youtube
 #   icon: 'fab fa-youtube'
