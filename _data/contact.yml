@@ -31,8 +31,10 @@
 #   type: tiktok
 #   icon: 'fab fa-tiktok'
 #   url:  'https://l.technotim.live/tiktok'
-# -
-#   type: facebook
+- type: orcid
+  icon: "fab fa-orcid"
+  url: "https://orcid.org/0000-0001-5987-4608"
+# - type: facebook
 #   icon: 'fab fa-facebook'
 #   url:  'https://l.technotim.live/facebook'
 # -

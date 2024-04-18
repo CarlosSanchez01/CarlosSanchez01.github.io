@@ -77,3 +77,9 @@ example, I created my own favicon.
 
 I added tabs and some contact in the page.
 Also some sharing options for the blogs.
+
+### Using the production fork
+
+https://mindlesstux.com/2023/10/14/update-chirpy-jekyll-theme/
+
+https://chirpy.cotes.page/posts/write-a-new-post/

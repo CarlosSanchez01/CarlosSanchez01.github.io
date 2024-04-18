@@ -3,6 +3,9 @@ layout: post
 title: "Creating a development environment with conda"
 date: 2024-04-07 09:00:00 -0500
 tags: conda ruby jekyll web
+image:
+  path: /assets/img/headers/conda.svg
+  alt: conda logo in svg
 ---
 
 # Using conda to build a jekyll site
