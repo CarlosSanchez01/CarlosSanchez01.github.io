@@ -6,6 +6,8 @@ tags: conda ruby jekyll web
 image:
   path: /assets/img/headers/conda.svg
   alt: conda logo in svg
+  max-width: 740
+  # height: 180
 ---
 
 # Using conda to build a jekyll site
